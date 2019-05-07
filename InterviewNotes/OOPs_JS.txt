@@ -1,0 +1,51 @@
+Object Oriented JavaScript Interview QUESTIONS :-
+
+1)Object :-
+An Object is a unique entity and a instance of class which contains
+property and methods. Properties are nothing but the characteristics of class
+where as method is a property of object whose value is a function.
+
+Characteristic of an object can be type,scope.
+
+*Various methods of Objects :-
+a) Object.create() :- It is used to create a new object using an existing object as 
+	a prototype.
+	
+	Eg:- const temp = {
+			isStydying : false,
+			tempFunc : function() {
+				.....
+			}
+		};
+		
+		const temp2 = object.create(temp);
+		temp2.isStydying = true;
+		temp2.tempFunc();
+
+2)Class :-
+Classes are blueprints of an object. It's more of a template whose instances are Objects.
+
+*JS classes were introduced in ES6 which are the syntatical sugar over JS's prototype
+based inheritance.
+
+*We can make class by two methods :- 
+a)Class declaration :- when we define a class by using "class" keyword.
+
+class temp {
+	constructor(name,place) {
+		this.name = name;
+		this.place = place;
+	}
+}
+
+b) class expressions :- while defining a class using expressions class_name is optional.
+Eg:- const demoClass = class {
+	constructor(name,place) {
+		this.name = name;
+		this.place = place;
+	}
+} 	
+
+3)Encapsulation :-
+The process of Wrapping property and function within a single unit is called Encapsulation.
+
